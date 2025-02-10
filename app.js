@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Navigate after the fade effect
                 setTimeout(() => {
                     window.location.href = destination;
-                }, 800); // Adjust timing based on your preference
+                }, 300); // Adjust timing based on your preference
             }
         });
     });
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fade in the page
     setTimeout(() => {
         document.body.style.opacity = 1;
-    }, 10);// Small delay to ensure the initial opacity is applied
+    }, 300);// Small delay to ensure the initial opacity is applied
 
 
 
