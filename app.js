@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Navigate after the fade effect
                 setTimeout(() => {
                     window.location.href = destination;
-                }, 100); // Adjust timing based on your preference
+                }, 500); // Adjust timing based on your preference
             }
         });
     });
