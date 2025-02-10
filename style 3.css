@@ -364,6 +364,10 @@ footer a:hover {
     .extra-block .img-extra-block {
         width: 13%;
     }
+
+    .footer{
+        display:none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -379,5 +383,8 @@ footer a:hover {
 
     .extra-block .img-extra-block {
         width: 13%;
+    }
+        .footer{
+        display:none;
     }
 }
