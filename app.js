@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fade in the page
     setTimeout(() => {
         document.body.style.opacity = 1;
-    }, 300);// Small delay to ensure the initial opacity is applied
+    }, 10);// Small delay to ensure the initial opacity is applied
 
 
 
