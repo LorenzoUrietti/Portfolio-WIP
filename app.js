@@ -1,6 +1,11 @@
 
 // Add click event listeners to not-available divs
 document.addEventListener('DOMContentLoaded', () => {
+
+    setTimeout(() => {
+        document.body.style.opacity = 1;
+    }, 800);
+
     const notAvailableDivs = document.querySelectorAll('.not-available');
     
     notAvailableDivs.forEach(div => {
