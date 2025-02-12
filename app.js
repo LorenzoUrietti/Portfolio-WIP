@@ -2,9 +2,7 @@
 // Add click event listeners to not-available divs
 document.addEventListener('DOMContentLoaded', () => {
 
-    setTimeout(() => {
-        document.body.style.opacity = 1;
-    }, 800);
+    initializePageTransition();
 
     const notAvailableDivs = document.querySelectorAll('.not-available');
     
@@ -84,4 +82,25 @@ document.addEventListener('DOMContentLoaded', () => {
     lazyLoadImages();
     });
 
+
+// Add popstate event listener for browser back/forward buttons
+window.addEventListener('popstate', () => {
+    // Fade out
+    document.body.style.opacity = 0;
+    
+    // Fade back in after a short delay
+    setTimeout(() => {
+        document.body.style.opacity = 1;
+    }, 100);
+});
+
+// Helper function to initialize page transition
+function initializePageTransition() {
+    document.body.style.transition = 'opacity 300ms ease-in-out';
+    document.body.style.opacity = 0;
+    
+    setTimeout(() => {
+        document.body.style.opacity = 1;
+    }, 100);
+}
 
