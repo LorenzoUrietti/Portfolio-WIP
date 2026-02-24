@@ -91,7 +91,7 @@ window.addEventListener('popstate', () => {
     // Fade back in after a short delay
     setTimeout(() => {
         document.body.style.opacity = 1;
-    }, 500);
+    }, 1000);
 });
 
 // Helper function to initialize page transition
@@ -101,6 +101,6 @@ function initializePageTransition() {
     
     setTimeout(() => {
         document.body.style.opacity = 1;
-    }, 500);
+    }, 1000);
 }
 
